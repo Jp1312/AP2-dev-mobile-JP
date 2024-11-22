@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/black">
+
+    <!-- Pergunta para o usuário -->
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Considerando seus rendimentos regulares, qual a porcentagem que você pretende reservar para aplicações financeiras?"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center" />
+
+    <!-- RadioGroup com as opções de resposta -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp">
+
+        <RadioButton
+            android:id="@+id/radioA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="A: No máximo 25%"
+            android:background="#FF0000"
+            android:textColor="@color/black"
+            android:padding="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:layout_marginBottom="16dp"
+            android:text="B: Entre 25,01 e 50%"
+            android:textColor="@color/black"
+            android:padding="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:layout_marginBottom="16dp"
+            android:text="C: Acima de 50%"
+            android:textColor="@color/black"
+            android:padding="16dp" />
+    </RadioGroup>
+
+    <!-- Botão para confirmar a resposta -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar resposta"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@color/black" />
+</LinearLayout>

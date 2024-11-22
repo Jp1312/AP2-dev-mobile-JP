@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/black">
+
+    <!-- Pergunta para o usuário -->
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2: Qual o objetivo desse investimento?"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center" />
+
+    <!-- RadioGroup com as opções de resposta -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp">
+
+        <RadioButton
+            android:id="@+id/radioA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:background="#FF0000"
+            android:text="A: Preservação do capital para não perder valor ao longo do tempo, assumindo baixos riscos de perdas"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radioB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:background="#FF0000"
+            android:text="B: Aumento gradual do capital ao longo do tempo, assumindo riscos moderados"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radioC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:background="#FF0000"
+            android:text="C: Aumento do capital acima da taxa de retorno média do mercado, mesmo que isso implique assumir riscos de perdas elevadas"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radioD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:background="#FF0000"
+            android:text="D: Obter no curto prazo retornos elevados e significativamente acima da taxa de retorno média do mercado, assumindo riscos elevados"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <!-- Botão para confirmar a resposta -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar resposta"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@color/black" />
+</LinearLayout>

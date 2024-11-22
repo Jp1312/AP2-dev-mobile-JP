@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/black">
+
+    <!-- Pergunta para o usuário -->
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3: Qual das alternativas melhor classifica sua formação e experiência com o mercado financeiro?"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center" />
+
+    <!-- RadioGroup com as opções de resposta -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp">
+
+        <RadioButton
+            android:id="@+id/radioA"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#FF0000"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:text="A: Não possuo formação acadêmica ou conhecimento do mercado financeiro"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radioB"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#FF0000"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:text="B: Possuo formação acadêmica na área financeira, mas não tenho experiência com o mercado financeiro"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radioC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#FF0000"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:text="C: Possuo formação acadêmica em outra área, mas possuo conhecimento do mercado financeiro"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radioD"
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#FF0000"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="16dp"
+            android:text="D: Possuo formação acadêmica na área financeira ou pleno conhecimento do mercado financeiro"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <!-- Botão para confirmar a resposta -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar resposta"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@color/black" />
+</LinearLayout>
